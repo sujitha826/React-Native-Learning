@@ -1,12 +1,13 @@
-import React from 'react';  
+import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-
+// import Icon from 'react-native-vector-icons/FontAwesome5';
 
 const HeaderComponent = ({ title }) => {
-    const headerTitle = title;        // uses when there is no reassignment of the value
+    const headerTitle = title;
 
     return (
         <View style={styles.header}>
+            { /* <Icon name={'comments'} light />*/}
             <Text style={styles.text}>{headerTitle}</Text>
         </View>
     );
@@ -18,14 +19,16 @@ const HeaderComponent = ({ title }) => {
 
 const styles = StyleSheet.create({
     header: {
-        height: 70,
+        height: 80,
         padding: 15,
-        backgroundColor: 'darkslateblue',
+        backgroundColor: 'white',
+        margin: 12
     },
     text: {
-        color: 'white',
-        fontSize: 25,
+        color: 'black',
+        fontSize: 30,
         textAlign: 'center',
+        fontWeight: 'bold',
     },
 });
 
